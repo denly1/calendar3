@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="image\doshirak.png" />
+    <None Remove="image\pivo %281%29.png" />
+    <None Remove="image\semechkii %282%29.png" />
+    <None Remove="image\suxariki %281%29.png" />
+    <None Remove="image\zvachka %281%29.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="image\doshirak.png" />
+    <Resource Include="image\pivo (1).png" />
+    <Resource Include="image\semechkii (2).png" />
+    <Resource Include="image\suxariki (1).png" />
+    <Resource Include="image\zvachka (1).png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ViewModel\" />
+  </ItemGroup>
+
+</Project>
